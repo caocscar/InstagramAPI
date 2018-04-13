@@ -1,9 +1,9 @@
-# InstagramAPI
+# Instagram API
 
 This repository has some sample code for extracting data from Instagram. This uses the unofficial Instagram API for Python located at 
 https://github.com/LevPasha/Instagram-API-python  It is different in that it extracts some of the data for you from the JSON response.
 
-You also need the Google Maps module (for geocoding). OR you can just comment out the relevant lines of code.
+You also need the [Google Maps module](https://github.com/googlemaps/google-maps-services-python) (for geocoding) OR you can just comment out the relevant lines of code.
 
 Example code is provided in `sample_code.py`. You need to provide your login information in `instagram_api_functions.py` before starting.
 
