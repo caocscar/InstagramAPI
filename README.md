@@ -1,6 +1,6 @@
 # Instagram API
 
-This repository has some sample code from helping CSCAR clients for extracting data from Instagram. This uses the unofficial Instagram API for Python located at https://github.com/LevPasha/Instagram-API-python  I use the API to get the JSON response and then extract some subset of the response.
+This repository has some sample code from helping CSCAR clients for extracting data from Instagram. This uses the unofficial Instagram API for Python located at https://github.com/LevPasha/Instagram-API-python.  I use the API to get the JSON response and then extract some subset of the response.
 
 You also need the [Google Maps module](https://github.com/googlemaps/google-maps-services-python) (for geocoding) OR you can just comment out the relevant lines of code.
 
