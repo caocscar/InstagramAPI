@@ -369,7 +369,7 @@ def get_post_comments(media_id, *, max_id='', count=100000):
         print('Comment {}'.format(counter) )
         API.getMediaComments(media_id, max_id=max_id)
         response = API.LastJson
-        if response.get('comment_count',0) == 0:
+        if response.get('comment_count',0) == 0 or len(response['comments']) == 0:
             return pd.DataFrame(columns=columns)
         for i, comment in enumerate(response['comments'], start=counter+1):
             seconds = comment['created_at']
