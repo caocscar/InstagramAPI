@@ -149,7 +149,7 @@ def get_user_posts(uid, *, max_id = '', count=15000, geocode=False):
     Returns
     -------
     DataFrame
-        Columns: ['media_id','urlcode','timestamp','weekday','lon',
+        Columns: ['media_id','shortcode','timestamp','weekday','lon',
                   'lat','address','like_count','comment_count','media_type',
                   'duration','views','photos','text']
     """
@@ -188,7 +188,7 @@ def get_user_posts(uid, *, max_id = '', count=15000, geocode=False):
             duration = item.get('video_duration', None)
             views = item.get('view_count', None)
             photos = len(item['carousel_media']) if media == 8 else 1
-            data.append((media_id, urlcode, timestamp, weekday, lon, lat, address, likes, comments, media, duration, views, photos, txt))
+            data.append((media_id, shortcode, timestamp, weekday, lon, lat, address, likes, comments, media, duration, views, photos, txt))
             if i >= count:
                 break
         counter = i
